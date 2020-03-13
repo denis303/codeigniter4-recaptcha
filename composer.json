@@ -1,0 +1,9 @@
+{
+    "name": "denis303/codeigniter4-recaptcha",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Denis303\\ReCaptcha\\" : ""
+        }
+    }
+}
