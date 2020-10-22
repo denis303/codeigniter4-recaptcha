@@ -3,9 +3,9 @@
 use Denis303\ReCaptcha\Config\ReCaptcha2;
 use Denis303\ReCaptcha\Config\ReCaptcha3;
 
-if (!function_exists('recaptcha2'))
+if (!function_exists('reCaptcha2'))
 {
-    function recaptcha2(string $name, array $attributes = [], array $options = [], bool $init = true)
+    function reCaptcha2(string $name, array $attributes = [], array $options = [], bool $init = true)
     {
         $config = config(ReCaptcha2::class);
 
@@ -40,9 +40,9 @@ if (!function_exists('recaptcha2'))
     }
 }
 
-if (!function_exists('recaptcha3'))
+if (!function_exists('reCaptcha3'))
 {
-    function recaptcha3(string $name, array $attributes = [], array $options = [], bool $init = true)
+    function reCaptcha3(string $name, array $attributes = [], array $options = [], bool $init = true)
     {
         $config = config(ReCaptcha3::class);
 
