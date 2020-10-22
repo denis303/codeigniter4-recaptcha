@@ -40,7 +40,7 @@ helper(['form', 'reCaptcha']);
 
 echo form_open();
 
-echo reCaptcha2('reCaptcha2', ['id' => 'recaptcha_1'], ['theme' => 'dark']);
+echo reCaptcha2('reCaptcha2', ['id' => 'recaptcha_v2'], ['theme' => 'dark']);
 
 echo form_submit('submit', 'Submit');
 
@@ -54,7 +54,7 @@ helper(['form', 'reCaptcha']);
 
 echo form_open();
 
-echo reCaptcha3('reCaptcha3', ['id' => 'recaptcha_1'], ['action' => 'contactForm']);
+echo reCaptcha3('reCaptcha3', ['id' => 'recaptcha_v3'], ['action' => 'contactForm']);
 
 echo form_submit('submit', 'Submit');
 
@@ -73,12 +73,4 @@ public $validationRules = [
 
 In the settings of the reCaptcha3 validator, the first parameter you specify is expectedAction, this parameter is not required.
 
-You can override global scoreThreshold parameter in the second rule parameter.
-
-### Setting custom ReCaptcha validation error in a model:
-
-protected $validationMessages = [
-    'reCaptcha' => [
-        'reCaptcha3' => 'Captcha is not valid.'
-    ]
-];
+You can override a global scoreThreshold parameter in the second reCaptcha3 rule parameter.
