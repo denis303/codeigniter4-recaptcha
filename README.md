@@ -26,10 +26,12 @@ recaptcha3.scoreThreshold = 0.5
 
 In the /app/Config/Validation.php file you need to add settings for validator:
 
+```
 public $ruleSets = [
     ...
     \Denis303\ReCaptcha\Validation\ReCaptchaRules::class
 ];
+```
 
 ## Rendering ReCaptcha v2
 
@@ -61,11 +63,13 @@ echo form_close();
 
 ## Checking ReCaptcha in a model:
 
+```
 public $validationRules = [
     'reCaptcha2' => 'required|reCaptcha2[]'
     'reCaptcha3' => 'required|reCaptcha3[contactForm,0.9]'
     ....
 ];
+```
 
 In the settings of the reCaptcha3 validator, the first parameter you specify is expectedAction, this parameter is not required.
 
