@@ -1,10 +1,11 @@
 Google reCAPTCHA CodeIgniter 4 Library
+======================================
 
-##Installation
+## Installation
 
 ```composer require denis303/codeigniter4-recaptcha:dev-master```
 
-##Configuration
+## Configuration
 
 In the .env file you need to add your personal ReCaptcha keys.
 
@@ -30,9 +31,7 @@ public $ruleSets = [
     \Denis303\ReCaptcha\Validation\ReCaptchaRules::class
 ];
 
-## Rendering ReCaptcha 2
-
-Rendering of a hidden field ReCaptcha v2 in the form:
+## Rendering ReCaptcha v2
 
 ```
 helper(['form', 'reCaptcha']);
@@ -46,9 +45,7 @@ echo form_submit('submit', 'Submit');
 echo form_close();
 ```
 
-## Rendering ReCaptcha 3
-
-Rendering of a hidden field ReCaptcha v3 in the form:
+## Rendering ReCaptcha v3
 
 ```
 helper(['form', 'reCaptcha']);
