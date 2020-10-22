@@ -33,7 +33,7 @@ public $ruleSets = [
 ];
 ```
 
-## Rendering ReCaptcha v2
+### Rendering ReCaptcha v2
 
 ```
 helper(['form', 'reCaptcha']);
@@ -47,7 +47,7 @@ echo form_submit('submit', 'Submit');
 echo form_close();
 ```
 
-## Rendering ReCaptcha v3
+### Rendering ReCaptcha v3
 
 ```
 helper(['form', 'reCaptcha']);
@@ -61,7 +61,7 @@ echo form_submit('submit', 'Submit');
 echo form_close();
 ```
 
-## Checking ReCaptcha in a model:
+### Checking ReCaptcha in a model:
 
 ```
 public $validationRules = [
@@ -75,7 +75,7 @@ In the settings of the reCaptcha3 validator, the first parameter you specify is 
 
 You can override global scoreThreshold parameter in the second rule parameter.
 
-## Setting custom ReCaptcha validation error in a model:
+### Setting custom ReCaptcha validation error in a model:
 
 protected $validationMessages = [
     'reCaptcha' => [
