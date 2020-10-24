@@ -12,11 +12,6 @@ class ReCaptchaRules
         $service = service('reCaptcha2');
 
         $params = explode(',', $params);
-
-        if (count($params) == 0)
-        {
-            $service->setExpectedAction($params[0]);
-        }
         
         $response = $service->verify($token);
 
