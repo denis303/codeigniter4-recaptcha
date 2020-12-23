@@ -9,7 +9,7 @@
 grecaptcha.ready(function() {
     grecaptcha.execute('<?= $key;?>', <?= json_encode($options);?>).then(function(token) {
         document.getElementById('<?= $id;?>').value = token;
-        document.getElementById('<?= $id;?>').oninput();
+        // document.getElementById('<?= $id;?>').oninput();
     });
 });
 
