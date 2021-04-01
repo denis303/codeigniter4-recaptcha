@@ -7,7 +7,7 @@ $options['callback'] = 'reCaptcha2VerifyCallback_' . $num;
 
 <div id="reCaptcha2_<?= $num;?>"></div>
 
-<script type="text/javascript">
+<script {csp-script-nonce} type="text/javascript">
 
     var reCaptcha2VerifyCallback_<?= $num;?> = function(response) {
         document.getElementById('<?= $id;?>').value = response;
@@ -18,4 +18,4 @@ $options['callback'] = 'reCaptcha2VerifyCallback_' . $num;
     };
 </script>
 
-<script src="https://www.google.com/recaptcha/api.js?onload=reCaptcha2Callback_<?= $num;?>&render=explicit" async defer></script>
+<script {csp-script-nonce} src="https://www.google.com/recaptcha/api.js?onload=reCaptcha2Callback_<?= $num;?>&render=explicit" async defer></script>
